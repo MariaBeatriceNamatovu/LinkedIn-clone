@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <link rel="icon" href="assets/logo.png" type="image">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt=""></a>
+
+            <div class="search-box">
+                <img src="./assets/search.png" alt="">
+                <input type="text" placeholder="search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="assets/home.png" alt=""><span>Home</span></a></li>
+                <li><a href="#"><img src="assets/network.png" alt=""><span>My Network</span></a></li>
+                <li><a href="#"><img src="assets/jobs.png" alt=""><span>Jobs</span></a></li>
+                <li><a href="#"><img src="assets/message.png" alt=""><span>Messaging</span></a></li>
+                <li><a href="#"><img src="assets/notification.png" alt=""><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="./assets/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+            
+        </div>
+
+
+        <!--profile-drop-down menu-->
+        <div class="profile-menu-wrap" id="profile-menu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./assets/user-1.png" alt="">
+                    <div>
+                        <h3>Ryan Magala</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="./assets/feedback.png" alt="">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="./assets/setting.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="./assets/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="./assets/display.png" alt="">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="./assets/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+
+    </nav>
+    
+
+    <!--nav bar end-->
+
+
+    <div class="container">
+
+        <!--left-sidebar-->
+
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="./assets/cover-pic.png" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="./assets/user-1.png" alt="">
+                    <h1>Ryan Mbaga</h1>
+                    <h3>AI architect at Microsoft</h3>
+                    <ul>
+                        <li>Your Profile views <span>59</span></li>
+                        <li>Your Post views <span>690</span></li>
+                        <li>Your connections <span>590</span></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="assets/items.png" alt="">My Items</a>
+                    <a href="#"><img src="assets/premium.png" alt="">Try Premium</a>
+                </div>
+            </div>
+
+
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>Recent</h3>
+                <a href="#"><img src="./assets/recent.png" alt="">Artificial Intelligence</a>
+                <a href="#"><img src="./assets/recent.png" alt="">Robotics</a>
+                <a href="#"><img src="./assets/recent.png" alt="">Cyber AI</a>
+                <a href="#"><img src="./assets/recent.png" alt="">Autonomous Technology</a>
+                <a href="#"><img src="./assets/recent.png" alt="">Medical AI</a>
+                <a href="#"><img src="./assets/recent.png" alt="">AI Online Learning</a>
+
+                <h3>Groups</h3>
+                <a href="#"><img src="assets/group.png" alt="">Robotics</a>
+                <a href="#"><img src="assets/group.png" alt="">Big Data Analytics</a>
+                <a href="#"><img src="assets/group.png" alt="">Medical AI</a>
+                <a href="#"><img src="assets/group.png" alt="">NLP Applications</a>
+
+                <h3>HashTag</h3>
+                <a href="#"><img src="./assets/hashtag.png" alt="">Data analysis</a>
+                <a href="#"><img src="./assets/hashtag.png" alt="">Computer Vision</a>
+                <a href="#"><img src="./assets/hashtag.png" alt="">Cybersecurity</a>
+
+                <div class="discover-more-link">
+                    <a href="#">Discover More</a>
+                </div>
+            </div>
+
+            <p id="show-more-link" onclick="toggleActivity()">Show more <b>+</b></p>
+        </div>
+
+
+        <!--main-content-->
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="./assets/user-1.png" alt="">
+                    <textarea rows="3" placeholder="create a post"></textarea>
+                </div>
+
+                <div class="create-post-links">
+                    <li><img src="./assets/photo.png" alt="">Photo</li>
+                    <li><img src="./assets/video.png" alt="">Video</li>
+                    <li><img src="./assets/event.png" alt="">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+
+            <div class="sort-by">
+                <hr>
+                <p>sort by <span>top <img src="./assets/down-arrow.png" alt=""></span></p>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="assets/user-3.png" alt="">
+                    <div>
+                        <h1>Angela Collins </h1>
+                        <small>AI architect</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>In the whirr of innovation, robotics dance with possibility, 
+                    orchestrating a symphony of mechanized elegance. Their metal sinews weave a tale of boundless creativity, crafting a future where human and machine 
+                    harmonize in seamless unity. With each calculated movement, they blur the lines between fiction and reality, breathing
+                     life into dreams once deemed fantastical.</p>
+
+                <img src="./assets/post-image-1.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="assets/thumbsup.png" alt="">
+                        <img src="assets/love.png" alt="">
+                        <img src="assets/clap.png" alt="">
+                        <span class="liked-users">Petronella Nanteza and 75 others</span>
+                    </div>
+
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="assets/user-1.png" class="post-activity-user-icon">
+                        <img src="./assets/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+
+                    <div class="post-activity-link">
+                        <img src="./assets/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="assets/user-4.png" alt="">
+                    <div>
+                        <h1>Anne-Marie Waters </h1>
+                        <small>Robotics Engineer</small>
+                        <small>3 hours ago</small>
+                    </div>
+                </div>
+                <p>In the realm of autonomous vehicles, innovation thrives, promising safer 
+                    roads and efficient transportation. Cutting-edge technologies like artificial
+                     intelligence and sensor fusion enable these vehicles to navigate complex environments with precision. With continuous advancements, they are poised to revolutionize mobility, offering convenience and reducing traffic congestion. As society embraces this transformative shift, the future of transportation unfolds, reshaping how we commute and interact with our surroundings. Autonomous vehicles epitomize the fusion of technology and transportation, heralding a new era of mobility where human intervention takes a 
+                    backseat to automation's precision and reliability..</p>
+
+                <img src="./assets/post-image-2.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="assets/thumbsup.png" alt="">
+                        <img src="assets/love.png" alt="">
+                        <img src="assets/clap.png" alt="">
+                        <span class="liked-users">Esther Nangobi and 95 others</span>
+                    </div>
+
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="assets/user-1.png" class="post-activity-user-icon">
+                        <img src="./assets/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+
+                    <div class="post-activity-link">
+                        <img src="./assets/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="assets/user-5.png" alt="">
+                    <div>
+                        <h1> Kimberley Grande </h1>
+                        <small>AI Engineer</small>
+                        <small>3 days ago</small>
+                    </div>
+                </div>
+                <p>Image recognition AI, a subset of computer vision, revolutionizes how machines interpret visual data. 
+                    By mimicking human visual perception, it enables computers to identify and classify objects within images or videos. Utilizing deep learning algorithms, 
+                    these systems analyze pixel patterns, shapes, and textures to recognize objects, faces, scenes, and more. From self-driving cars navigating roads to medical 
+                    diagnosis in healthcare, image recognition AI finds diverse applications. With advancements in neural networks and convolutional neural networks (CNNs), 
+                    accuracy and efficiency continue to improve, 
+                    empowering industries with powerful tools for automation, surveillance, and enhanced decision-making based on visual data analysis.</p>
+
+                <img src="./assets/post-image-3.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="assets/thumbsup.png" alt="">
+                        <img src="assets/love.png" alt="">
+                        <img src="assets/clap.png" alt="">
+                        <span class="liked-users">Anna Hurgens and 200 others</span>
+                    </div>
+
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="assets/user-1.png" class="post-activity-user-icon">
+                        <img src="./assets/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+
+                    <div class="post-activity-link">
+                        <img src="./assets/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--right-sidebar-->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="assets/more.png" class="info-icon">
+                <h3>Trending News</h3>
+                <a href="#">Upcoming AI technologies in Finance</a>
+                <span>1d ago &middot; 10,000 readers</span>
+
+                <a href="#">Top technologies in Transport industry</a>
+                <span>15h ago &middot; 15,934 readers</span>
+
+                <a href="#">More hiring = Higher Confidence?</a>
+                <span>10h ago &middot; 10,334 readers</span>
+
+                <a href="#">World's most innovative</a>
+                <span>12h ago &middot; 20,934 readers</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the dynamics of Neural Networks</p>
+                <div>
+                    <img src="assets/user-1.png" alt="">
+                    <img src="assets/mi-logo.png" alt="">
+                </div>
+                <b>Brand new demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+
+                <div class="copyright-msg">
+                    <img src="./assets/logo.png" alt="">
+                    <p>LinkedIn &#169; 2022. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

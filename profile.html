@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <link rel="icon" href="./assets/logo.png" type="image">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt=""></a>
+
+            <div class="search-box">
+                <img src="./assets/search.png" alt="">
+                <input type="text" placeholder="search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="assets/home.png" alt=""><span>Home</span></a></li>
+                <li><a href="#"><img src="assets/network.png" alt=""><span>My Network</span></a></li>
+                <li><a href="#"><img src="assets/jobs.png" alt=""><span>Jobs</span></a></li>
+                <li><a href="#"><img src="assets/message.png" alt=""><span>Messaging</span></a></li>
+                <li><a href="#"><img src="assets/notification.png" alt=""><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="./assets/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+            
+        </div>
+
+
+        <!--profile-drop-down menu-->
+        <div class="profile-menu-wrap" id="profile-menu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./assets/user-1.png" alt="">
+                    <div>
+                        <h3>Ryan Magala</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="./assets/feedback.png" alt="">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="./assets/setting.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="./assets/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="./assets/display.png" alt="">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="./assets/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+
+    </nav>
+    
+
+    <!--nav bar end-->
+
+
+    <div class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="assets/cover-pic.png" width="100%">
+                <div class="profile-container-inner">
+                    <img src="./assets/user-1.png" class="profile-pic">
+                    <h1>Ryan Magala</h1>
+                    <b>Artificial Intelligence Architect</b>
+                    <p>Warsaw, Poland &middot; <a href="#">Contact Info</a></p>
+                    <div class="mutual-connections">
+                        <img src="./assets/user-2.png" alt="">
+                        <span>1 mutual connection: Orlando Hugh</span>
+                    </div>
+
+                    <div class="profile-btn">
+                        <a href="#" class="primary-btn"><img src="assets/connect.png" alt="">Connect</a>
+                        <a href="#"><img src="assets/chat.png" alt="">Message</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="profile-description">
+                <h2>About</h2>
+                <p>Passionate about leveraging cutting-edge technologies to architect AI solutions that drive business innovation and solve complex challenges. With a solid foundation in machine learning, deep learning, and data science, I specialize in designing
+                     scalable AI systems tailored to specific business needs.</p>
+            
+                <a href="#" class="see-more-link">See More...</a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="assets/microsoft.png" alt="">
+                    <div>
+                        <h3>Machine Learning Engineer</h3>
+                        <b>Microsoft &middot; Full-time</b>
+                        <b>Feb 2021 - Present</b>
+                        <p>Developed machine learning models and algorithms for predictive analytics, recommendation systems, and anomaly detection, leveraging large-scale datasets 
+                            and state-of-the-art techniques.</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="assets/slack.png" alt="">
+                    <div>
+                        <h3>AI Architect</h3>
+                        <b>Slack &middot; Full-time</b>
+                        <b>Jan 2019 - Jan 2021 &middot; 3 years</b>
+                        <p>Lead the design and implementation of AI solutions, collaborating with cross-functional teams to define project requirements, 
+                            select appropriate technologies, and architect scalable and efficient AI systems.</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="assets/google.png" alt="">
+                    <div>
+                        <h3>Machine Learning Engineer</h3>
+                        <b>Google Inc &middot; Full-time</b>
+                        <b>Dec 2016 - Dec 2018 &middot; 2 years</b>
+                        <p>Developed machine learning models and algorithms for predictive analytics, recommendation systems, and anomaly detection, leveraging large-scale datasets 
+                            and state-of-the-art techniques.</p>
+                        
+                    </div>
+                </div>
+
+                <hr>
+                <a href="#" class="experience-link">Show All 7 experiences <img src="assets/right-arrow.png" alt=""></a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Education</h2>
+                <div class="profile-desc-row">
+                    <img src="assets/stanford.png" alt="">
+                
+                    <div>
+                    <h3>Stanford University</h3>
+                    <b>Bachelor of Computer Engineering, Artificial Intelligence</b>
+                    <b>2012 - 2016</b>
+                    <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="assets/north.png" alt="">
+                
+                    <div>
+                    <h3>NorthWestern University</h3>
+                    <b>Computer Science</b>
+                    <b>2016 - 2017</b>
+                    <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="assets/mit.png" alt="">
+                
+                    <div>
+                    <h3>MIT University</h3>
+                    <b>Masters of Computer Engineering, Artificial Intelligence</b>
+                    <b>2012 - 2016</b>
+                   
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="profile-description">
+                <h2>Skills</h2>
+                <a href="#" class="skills-btn">Data Engineeering</a>
+                <a href="#" class="skills-btn">Deep Learning Algorithmic design</a>
+                <a href="#" class="skills-btn">UI/UX Design</a>
+                <a href="#" class="skills-btn">Machine Learning</a>
+                <a href="#" class="skills-btn">Web Development</a>
+                <a href="#" class="skills-btn">Data Analysis</a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Languages</h2>
+                <a href="#" class="language-btn">Polish</a>
+                <a href="#" class="language-btn">French</a>
+                <a href="#" class="language-btn">German</a>
+                <a href="#" class="language-btn">English</a>
+            </div>
+        </div>
+
+        <!--profilesidebar-->
+        <div class="profile-sidebar">
+            
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the dynamics of Neural Networks</p>
+                <div>
+                    <img src="assets/user-1.png" alt="">
+                    <img src="assets/mi-logo.png" alt="">
+                </div>
+                <b>Brand new demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="./assets/user-3.png" alt="">
+                    <div>
+                        <h2>Samuel Tony</h2>
+                        <p>Head of Marketing at Ali Express</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="./assets/user-4.png" alt="">
+                    <div>
+                        <h2>Becky Hughens</h2>
+                        <p>Product designer at Spotify</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="./assets/user-5.png" alt="">
+                    <div>
+                        <h2>John Beckam</h2>
+                        <p>Software Engineer at Pinterest</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="./assets/user-2.png" alt="">
+                    <div>
+                        <h2>Chase Almeida</h2>
+                        <p>Product Manager at Netflix</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="profile-footer">
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+
+            <div class="copyright-msg">
+                <img src="./assets/logo.png" alt="">
+                <p>LinkedIn &#169; 2022. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
